@@ -8,7 +8,13 @@ RSpec.describe House do
   end
   context '#perimetre'
   it do
-    expect(house.perimeter).not_to be_empty
+    expect(house.perimeter).to be_a Integer
     expect(house.perimeter).to eq 4
+  end
+
+  context '#surface_area'
+  it do
+    expect(house.surface_area).to be_a Integer
+    expect(house.surface_area).to eq 1
   end
 end
