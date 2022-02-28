@@ -17,4 +17,15 @@ RSpec.describe House do
     expect(house.surface_area).to be_a Integer
     expect(house.surface_area).to eq 1
   end
+
+  context '#price'
+  it do
+    expect(house.price).to be_a Float
+    expect(house.price).to eq 1.0
+  end
+
+  it '#display_price' do
+    expect(house.display_price).to be_a String
+    expect(house.display_price).to eq("1.0 $")
+  end
 end
