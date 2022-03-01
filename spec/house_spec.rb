@@ -13,6 +13,7 @@ RSpec.describe House do
     expect(house.floors).to eq 1
     expect(house.price_m2).to be_a Float
     expect(house.price_m2).to eq 1.0
+    expect(house.created_at).to be_a Date
   end
   context '#perimetre'
   it do
