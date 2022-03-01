@@ -5,6 +5,14 @@ RSpec.describe House do
   subject(:house) { described_class.new(length: 1, width: 1, floors: 1, price_m2: 1.0) }
   it 'initialize length' do
     expect(house).to be_a House
+    expect(house.length).to be_a Integer
+    expect(house.length).to eq 1
+    expect(house.width).to be_a Integer
+    expect(house.width).to eq 1
+    expect(house.floors).to be_a Integer
+    expect(house.floors).to eq 1
+    expect(house.price_m2).to be_a Float
+    expect(house.price_m2).to eq 1.0
   end
   context '#perimetre'
   it do
