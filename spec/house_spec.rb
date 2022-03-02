@@ -61,5 +61,4 @@ RSpec.describe House do
     end
   end
 
-  end
 end
